@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Color Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+     <h3>Gradient Color Generator</h3>
+     <!-- display gradient color generator -->
+    <div class="gradient-box"></div>
+    <!-- input sections -->
+    <div class="row options">
+      <div class="column-direction">
+        <p>Direction</p>
+        <div class="select-box">
+          <select>
+
+            <option value="to top" selected>Top</option>
+            <option value="to right top">Right Top</option>
+            <option value="to right">Right</option>
+            <option value="to right bottom">Right Bottom</option>
+            <option value="to bottom">Bottom</option>
+            <option value="to left bottom">Left Bottom</option>
+            <option value="to left">Left</option>
+            <option value="to left top">Left Top</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="column colors">
+        <p>Colors</p>
+        <div class="input">
+          <input type="color" class="color-input1" value="#18d3d2">
+          <input type="color"  class="color-input2" value="#0d4cc9">
+
+        </div>
+      </div>
+    </div>
+    <!-- gradient property -->
+    <textarea name="" class="row" cols="30" rows="3" disabled>background : linear-gradient(to top , #18d3d2 , #0d4cc9);</textarea>
+
+    <!-- buttons -->
+
+    <div class="row buttons">
+      <button class="refresh">Refresh Colors</button>
+      <button class="copy">Copy Code</button>
+
+    </div>
+  </div>
+
+<!-- script tag -->
+  <script src="script.js"></script>
+</body>
+</html>
